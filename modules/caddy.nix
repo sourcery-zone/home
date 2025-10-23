@@ -12,9 +12,9 @@ let
     else "sha256-bYA8/iNw7lvUNLtTBSJdPB/W+sNs4l6VtNS6WBF97qw=";
   };
 in {
-  age.secrets = {
-    cloudflare.file = ../secrets/cloudflare.age;
-  };
+  # age.secrets = {
+  #   cloudflare.file = ../secrets/cloudflare.age;
+  # };
   
   services.caddy = {
     package = caddy-with-plugins;
@@ -26,11 +26,13 @@ in {
           per_host
         }
       '';
+    # TODO find a way to use secrets without committing them to this
+    # repository
     extraConfig =
       ''
         (cloudflare) {
           tls {
-            dns cloudflare $(cat ${config.age.secrets.cloudflare.path})
+            dns cloudflare xxxxxxxxxx 
             resolvers 1.1.1.1 1.0.0.1
           }
         }
