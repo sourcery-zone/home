@@ -1,0 +1,45 @@
+* Tasks [80%]
+** DONE Set up development environment
+CLOSED: [2025-10-23 Thu 08:11]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2025-10-23 Thu 08:11]
+- State "TODO"       from              [2025-10-23 Thu 07:28]
+:END:
+** DONE Initialize the flake
+CLOSED: [2025-10-23 Thu 08:16]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2025-10-23 Thu 08:16]
+- State "TODO"       from              [2025-10-23 Thu 07:28]
+:END:
+** DONE Build a test server
+CLOSED: [2025-10-23 Thu 08:20]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2025-10-23 Thu 08:20]
+- State "TODO"       from              [2025-10-23 Thu 07:50]
+:END:
+** DONE Set up Agenix
+CLOSED: [2025-10-23 Thu 08:27]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2025-10-23 Thu 08:27]
+- State "TODO"       from              [2025-10-23 Thu 07:26]
+:END:
+** TODO Transfer base homelab modules [0%]
+:LOGBOOK:
+- State "TODO"       from              [2025-10-23 Thu 07:27]
+:END:
+*** TODO Caddy
+:LOGBOOK:
+- State "TODO"       from              [2025-10-23 Thu 07:28]
+:END:
+*** TODO Pihole
+:LOGBOOK:
+- State "TODO"       from              [2025-10-23 Thu 07:28]
+:END:
+*** TODO Podman
+:LOGBOOK:
+- State "TODO"       from              [2025-10-23 Thu 07:29]
+:END:
+*** TODO Postgresql
+:LOGBOOK:
+- State "TODO"       from              [2025-10-23 Thu 07:29]
+:END:
