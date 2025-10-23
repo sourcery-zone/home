@@ -1,0 +1,11 @@
+* Home
+
+My daily driver systems built on [[https://nixos.org/][NixOS]].
+
+* Live Stream
+
+While building this repository, I'm going to stream it live on
+Youtube. Feel free to join me there and share ideas.
+
+Link to playlist:
+https://www.youtube.com/playlist?list=PLvWC0OdoEeTjRUCZ5kdigV4wZS8HpirGR
