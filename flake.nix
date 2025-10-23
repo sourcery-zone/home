@@ -33,6 +33,11 @@
         edge02-htz-hel-test = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           modules = [
+            ./nixos/configuration.nix # NOTE This is temporary
+            ./modules/openssh.nix
+            ./modules/podman.nix
+            ./modules/caddy.nix
+            #./modules/pihole.nix TODO pass the argument
             agenix.nixosModules.default
           ];
         };

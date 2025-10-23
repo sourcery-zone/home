@@ -23,16 +23,20 @@ CLOSED: [2025-10-23 Thu 08:27]
 - State "DONE"       from "TODO"       [2025-10-23 Thu 08:27]
 - State "TODO"       from              [2025-10-23 Thu 07:26]
 :END:
-** TODO Transfer base homelab modules [0%]
+** TODO Transfer base homelab modules [50%]
 :LOGBOOK:
 - State "TODO"       from              [2025-10-23 Thu 07:27]
 :END:
-*** TODO Caddy
+*** DONE Caddy
+CLOSED: [2025-10-23 Thu 08:48]
 :LOGBOOK:
+- State "DONE"       from "TODO"       [2025-10-23 Thu 08:48]
 - State "TODO"       from              [2025-10-23 Thu 07:28]
 :END:
-*** TODO Pihole
+*** DONE Pihole
+CLOSED: [2025-10-23 Thu 08:49]
 :LOGBOOK:
+- State "DONE"       from "TODO"       [2025-10-23 Thu 08:49]
 - State "TODO"       from              [2025-10-23 Thu 07:28]
 :END:
 *** TODO Podman
