@@ -37,10 +37,14 @@
             ./modules/openssh.nix
             ./modules/podman.nix
             ./modules/caddy.nix
-            #./modules/pihole.nix TODO pass the argument
+            ./modules/pihole.nix
+            ./modules/postgresql.nix
             agenix.nixosModules.default
             {
               age.secrets = secrets.age;
+              module.pihole.domain = "localhost";
+
+              services.postgresql.ensureDatabases = [ "gitea" "nextcloud" ];
             }
           ];
         };

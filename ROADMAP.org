@@ -1,4 +1,4 @@
-* Tasks [75%]
+* Tasks [70%]
 ** DONE Set up development environment
 CLOSED: [2025-10-23 Thu 08:11]
 :LOGBOOK:
@@ -34,13 +34,13 @@ CLOSED: [2025-10-25 Sat 09:14]
 :LOGBOOK:
 - State "DONE"       from "TODO"       [2025-10-25 Sat 09:14]
 :END:
-** TODO Transfer base homelab modules [40%]
+** TODO Transfer base homelab modules [75%]
 :LOGBOOK:
 - State "TODO"       from              [2025-10-23 Thu 07:27]
 :END:
-*** DONE Caddy
-CLOSED: [2025-10-23 Thu 08:48]
+*** TODO Caddy
 :LOGBOOK:
+- State "TODO"       from "DONE"       [2025-10-25 Sat 09:27]
 - State "DONE"       from "TODO"       [2025-10-23 Thu 08:48]
 - State "TODO"       from              [2025-10-23 Thu 07:28]
 :END:
@@ -50,15 +50,29 @@ CLOSED: [2025-10-23 Thu 08:49]
 - State "DONE"       from "TODO"       [2025-10-23 Thu 08:49]
 - State "TODO"       from              [2025-10-23 Thu 07:28]
 :END:
-*** TODO Podman
+*** DONE Podman
+CLOSED: [2025-10-25 Sat 09:16]
 :LOGBOOK:
+- State "DONE"       from "TODO"       [2025-10-25 Sat 09:16]
 - State "TODO"       from              [2025-10-23 Thu 07:29]
 :END:
-*** TODO Postgresql
+*** DONE Postgresql
+CLOSED: [2025-10-25 Sat 09:29]
 :LOGBOOK:
+- State "DONE"       from "TODO"       [2025-10-25 Sat 09:29]
 - State "TODO"       from              [2025-10-23 Thu 07:29]
 :END:
-** TODO Enable SSH to the test machine
+** DONE Enable SSH to the test machine
+CLOSED: [2025-10-25 Sat 09:17]
 :LOGBOOK:
+- State "DONE"       from "TODO"       [2025-10-25 Sat 09:17]
 - State "TODO"       from              [2025-10-25 Sat 08:15]
+:END:
+** TODO Life time policy for pg backup
+:LOGBOOK:
+- State "TODO"       from              [2025-10-25 Sat 09:28]
+:END:
+** TODO [#C] Upload pg backup to remote
+:LOGBOOK:
+- State "TODO"       from              [2025-10-25 Sat 09:28]
 :END:
