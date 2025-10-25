@@ -10,3 +10,4 @@ devenv.local.nix
 
 ./result/
 *.qcow2
+secrets

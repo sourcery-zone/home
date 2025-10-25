@@ -5,6 +5,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
     agenix.url = "github:ryantm/agenix";
     nixos-raspberrypi.url = "github:nvmd/nixos-raspberrypi/main";
+    secrets.url = "git+ssh://sourcery.github.com/sourcery-zone/secrets";
   };
 
   nixConfig = {
@@ -21,8 +22,7 @@
     nixpkgs,
     agenix,
     nixos-raspberrypi,
-    disko,
-    nixos-anywhere,
+    secrets,
     ... }@inputs: {
 
       rpi3Image = nixos-raspberrypi.installerImages.rpi3;
@@ -39,6 +39,9 @@
             ./modules/caddy.nix
             #./modules/pihole.nix TODO pass the argument
             agenix.nixosModules.default
+            {
+              age.secrets = secrets.age;
+            }
           ];
         };
       };

@@ -1,6 +1,11 @@
 { config, lib, pkgs, ... }:
 
 {
+  imports = [
+    ../modules/openssh.nix
+  ];
+
+  services.openssh.openFirewall = true;
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
@@ -8,10 +13,19 @@
   boot.kernelPackages = pkgs.linuxPackages_6_12;
   virtualisation.vmVariant = {
     virtualisation = {
-      qemu.options = [ "-device virtio-vga -audio model=hda,driver=pipewire" ];
+      qemu.options = [
+        "-device virtio-vga -audio model=hda,driver=pipewire"
+      ];
       memorySize = 6000;
       cores = 6;
       diskSize = 20000;
+      forwardPorts = [
+        {
+          from = "host";
+          host.port = 2221;
+          guest.port = 22;
+        }
+      ];
     };
   };
 
@@ -29,6 +43,9 @@
     isNormalUser = true;
     password = "12345";
     extraGroups = [ "wheel" ];
+    openssh.authorizedKeys.keys = [
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOVWjF49VNIdYmmS/Ftnz2RtD+hiua4+LeSAJU2wqOE1 no_pass"
+    ];
   };
   security.sudo.wheelNeedsPassword = false;
 
