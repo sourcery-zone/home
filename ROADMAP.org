@@ -1,4 +1,4 @@
-* Tasks [80%]
+* Tasks [62%]
 ** DONE Set up development environment
 CLOSED: [2025-10-23 Thu 08:11]
 :LOGBOOK:
@@ -23,7 +23,14 @@ CLOSED: [2025-10-23 Thu 08:27]
 - State "DONE"       from "TODO"       [2025-10-23 Thu 08:27]
 - State "TODO"       from              [2025-10-23 Thu 07:26]
 :END:
-** TODO Transfer base homelab modules [50%]
+** DONE Use a virtual machine for test
+CLOSED: [2025-10-25 Sat 08:15]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2025-10-25 Sat 08:15]
+- State "TODO"       from              [2025-10-25 Sat 07:42]
+:END:
+** TODO Fix Agenix
+** TODO Transfer base homelab modules [40%]
 :LOGBOOK:
 - State "TODO"       from              [2025-10-23 Thu 07:27]
 :END:
@@ -46,4 +53,8 @@ CLOSED: [2025-10-23 Thu 08:49]
 *** TODO Postgresql
 :LOGBOOK:
 - State "TODO"       from              [2025-10-23 Thu 07:29]
+:END:
+** TODO Enable SSH to the test machine
+:LOGBOOK:
+- State "TODO"       from              [2025-10-25 Sat 08:15]
 :END:

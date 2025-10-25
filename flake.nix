@@ -30,10 +30,10 @@
       rpi5Image = nixos-raspberrypi.installerImages.rpi5;
       
       nixosConfigurations = {
-        edge02-htz-hel-test = nixpkgs.lib.nixosSystem {
+        test-vm = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           modules = [
-            ./nixos/configuration.nix # NOTE This is temporary
+            ./systems/test.nix
             ./modules/openssh.nix
             ./modules/podman.nix
             ./modules/caddy.nix
