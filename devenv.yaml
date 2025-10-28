@@ -4,6 +4,8 @@ inputs:
     url: github:cachix/devenv-nixpkgs/rolling
   agenix:
     url: github:ryantm/agenix
+  microvm:
+    url: github:microvm-nix/microvm.nix
 
 # If you're using non-OSS software, you can set allowUnfree to true.
 # allowUnfree: true

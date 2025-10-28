@@ -8,6 +8,7 @@ devenv.local.nix
 # pre-commit
 .pre-commit-config.yaml
 
-./result/
+result
 *.qcow2
 secrets
+var.img

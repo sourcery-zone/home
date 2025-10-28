@@ -1,4 +1,4 @@
-* Tasks [54%]
+* Tasks [63%]
 ** DONE Set up development environment
 CLOSED: [2025-10-23 Thu 08:11]
 :LOGBOOK:
@@ -29,6 +29,21 @@ CLOSED: [2025-10-25 Sat 08:15]
 - State "DONE"       from "TODO"       [2025-10-25 Sat 08:15]
 - State "TODO"       from              [2025-10-25 Sat 07:42]
 :END:
+** DONE Enable SSH to the test machine
+CLOSED: [2025-10-25 Sat 09:17]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2025-10-25 Sat 09:17]
+- State "TODO"       from              [2025-10-25 Sat 08:15]
+:END:
+** DONE Switch to ~microvm~ for testing
+CLOSED: [2025-10-28 Tue 07:25]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2025-10-28 Tue 07:25]
+- State "TODO"       from              [2025-10-25 Sat 09:46]
+:END:
+~build-vm~ doesn't preserve any states, meaning the machine keys will
+always change, and that ends up with ~agenix~ not uploading the secret
+files to the target machine.
 ** TODO Fix Agenix
 :LOGBOOK:
 - State "TODO"       from "DONE"       [2025-10-25 Sat 09:46]
@@ -62,19 +77,6 @@ CLOSED: [2025-10-25 Sat 09:29]
 - State "DONE"       from "TODO"       [2025-10-25 Sat 09:29]
 - State "TODO"       from              [2025-10-23 Thu 07:29]
 :END:
-** DONE Enable SSH to the test machine
-CLOSED: [2025-10-25 Sat 09:17]
-:LOGBOOK:
-- State "DONE"       from "TODO"       [2025-10-25 Sat 09:17]
-- State "TODO"       from              [2025-10-25 Sat 08:15]
-:END:
-** TODO Switch to ~microvm~ for testing
-:LOGBOOK:
-- State "TODO"       from              [2025-10-25 Sat 09:46]
-:END:
-~build-vm~ doesn't preserve any states, meaning the machine keys will
-always change, and that ends up with ~agenix~ not uploading the secret
-files to the target machine.
 ** TODO Life time policy for pg backup
 :LOGBOOK:
 - State "TODO"       from              [2025-10-25 Sat 09:28]
