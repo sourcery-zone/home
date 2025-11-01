@@ -6,15 +6,19 @@ let
       "github.com/caddy-dns/cloudflare@v0.2.1"
       "github.com/caddy-dns/acmedns@v0.4.1"
     ];
-    hash =
-    if pkgs.stdenv.hostPlatform.isAarch64
-    then "sha256-rf8ETPUwAiYASyGn/c8YKTh3OOlq1vfvELzM9I1tvr4="
-    else "sha256-bYA8/iNw7lvUNLtTBSJdPB/W+sNs4l6VtNS6WBF97qw=";
+    hash = "sha256-bYA8/iNw7lvUNLtTBSJdPB/W+sNs4l6VtNS6WBF97qw=";
   };
-in {  
+in {
+  age.secrets.cloudflare = {
+    mode = "0400";
+    owner = "caddy";
+    group = "caddy";
+  };
+  
   services.caddy = {
     package = caddy-with-plugins;
     enable = true;
+    environmentFile = config.age.secrets.cloudflare.path;
     globalConfig =
       ''
         admin 0.0.0.0:2019
@@ -22,12 +26,11 @@ in {
           per_host
         }
       '';
-    
     extraConfig =
       ''
         (cloudflare) {
           tls {
-            dns cloudflare $(cat ${config.age.secrets.cloudflare.path})
+            dns cloudflare {env.CLOUDFLARE_API_KEY}
             resolvers 1.1.1.1 1.0.0.1
           }
         }

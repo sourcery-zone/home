@@ -2,8 +2,12 @@
   services.openssh = {
     enable = true;
     settings = {
-      UseDns = true;
+      UseDns = false;
+      GSSAPIAuthentication = false;  # avoid Kerberos/GSSAPI delays
+      PrintMotd = false;             # skip motd scripts
+      PrintLastLog = false;          # avoids slow lastlog host lookups
       PasswordAuthentication = false;
+      KbdInteractiveAuthentication = false;
     };
 
     # TODO make it an option

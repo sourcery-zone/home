@@ -70,9 +70,7 @@ in {
     services.caddy.virtualHosts = {
       "${cfg.domain}".extraConfig = ''
         reverse_proxy http://localhost:8053
-      tls {
         import cloudflare
-      }
       '';
     };
 

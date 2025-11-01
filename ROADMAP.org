@@ -1,4 +1,4 @@
-* Tasks [63%]
+* Tasks [83%]
 ** DONE Set up development environment
 CLOSED: [2025-10-23 Thu 08:11]
 :LOGBOOK:
@@ -44,17 +44,29 @@ CLOSED: [2025-10-28 Tue 07:25]
 ~build-vm~ doesn't preserve any states, meaning the machine keys will
 always change, and that ends up with ~agenix~ not uploading the secret
 files to the target machine.
-** TODO Fix Agenix
+** DONE Switch back to ~build-vm~
+CLOSED: [2025-11-01 Sat 07:36]
 :LOGBOOK:
+- State "DONE"       from "TODO"       [2025-11-01 Sat 07:36]
+- State "TODO"       from              [2025-11-01 Sat 07:36]
+:END:
+** DONE Fix Agenix
+CLOSED: [2025-11-01 Sat 08:22]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2025-11-01 Sat 08:22]
 - State "TODO"       from "DONE"       [2025-10-25 Sat 09:46]
 - State "DONE"       from "TODO"       [2025-10-25 Sat 09:14]
 :END:
-** TODO Transfer base homelab modules [75%]
+** DONE Transfer base homelab modules [100%]
+CLOSED: [2025-11-01 Sat 08:23]
 :LOGBOOK:
+- State "DONE"       from "TODO"       [2025-11-01 Sat 08:23]
 - State "TODO"       from              [2025-10-23 Thu 07:27]
 :END:
-*** TODO Caddy
+*** DONE Caddy
+CLOSED: [2025-11-01 Sat 08:23]
 :LOGBOOK:
+- State "DONE"       from "TODO"       [2025-11-01 Sat 08:23]
 - State "TODO"       from "DONE"       [2025-10-25 Sat 09:27]
 - State "DONE"       from "TODO"       [2025-10-23 Thu 08:48]
 - State "TODO"       from              [2025-10-23 Thu 07:28]
